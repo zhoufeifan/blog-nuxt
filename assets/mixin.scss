@@ -437,3 +437,9 @@
   -webkit-line-clamp: $num;
   -webkit-box-orient: vertical;
 }
+
+
+@mixin centerBlock {
+  margin-left: auto;
+  margin-right: auto;
+}

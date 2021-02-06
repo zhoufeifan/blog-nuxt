@@ -12,7 +12,8 @@ const service = {};
 export const state = () => {
   return {
     tagList: getTagList(articleList),
-    yearList: getYearList(articleList)
+    yearList: getYearList(articleList),
+    articleList,
   };
 };
 

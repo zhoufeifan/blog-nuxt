@@ -76,11 +76,17 @@ function mergeYearItem(yearItem, item) {
 // }]
 
 function getMonthList(data) {
-  return Object.entries(data).map(([month, articleList])=>{
+  const result = Object.entries(data).map(([month, articleList])=>{
     return {
       month,
       articleList
     }
+  });
+  return result.sort((a,b)=>{
+    if(Number(a.month) > Number(b.month)) {
+      return -1;
+    }
+    return 1;
   })
 }
 
@@ -97,5 +103,11 @@ export function getYearList(articleList) {
       monthList: getMonthList(data)
     }
   })
-  return resultList;
+  // console.log(JSON.stringify(resultList))
+  return resultList.sort((a,b)=>{
+    if(Number(a.year) > Number(b.year)) {
+      return -1;
+    }
+    return 1;
+  });
 }

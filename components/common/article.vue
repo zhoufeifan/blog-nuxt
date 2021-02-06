@@ -13,24 +13,23 @@
             width="100%"
             class="mobil-img"/>
           </nuxt-link>
-          <p class="abstrack">{{ item.descript | text(200)}}</p>
+          <p class="abstrack">{{ item.desc | text(200)}}</p>
           <div class="meta">
             <span class="time" v-if="!mobileLayout">
               {{
-                item.createAt | dateFormat('yyyy.MM.dd')
+                item.time | dateFormat('yyyy.MM.dd')
               }}
             </span>
             <span class="time" v-else>
               {{
-                item.createAt | dateFormat('yyyy.MM.dd')
+                item.time | dateFormat('yyyy.MM.dd')
               }}
             </span>
-            <span class="hr"></span>
-            <!-- <span class="read"> {{ item.meta.views }} 次阅读</span> -->
-            <span class="hr"></span>
+            <!-- <span class="hr"></span> -->
+            <!-- <span class="hr"></span>
             <span class="comments"> {{ item.meta.comments }} 条评论</span>
             <span class="hr"></span>
-            <span class="like"> {{ item.meta.likes }} 人喜欢</span>
+            <span class="like"> {{ item.meta.likes }} 人喜欢</span> -->
           </div>
         </div>
         <span class="article-line"></span>
@@ -70,7 +69,8 @@ export default {
   computed: {
     fetch () {
       // return true
-      return this.$store.state.article.fetch
+      return false;
+      // return this.$store.state.article.fetch
     },
 
     mobileLayout () {
@@ -78,7 +78,8 @@ export default {
     },
 
     type() {
-      return ['', 'code', 'think', 'fuck'][this.currentType]
+      return this.currentType;
+      // return ['', 'code', 'think', 'fuck'][this.currentType]
     }
   }
 }

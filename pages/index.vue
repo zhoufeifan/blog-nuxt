@@ -30,19 +30,10 @@
                 v-if="!mobileLayout"
 
                 @click="goType(item)"
-
-                :class="{
-                  'code': item.type === 1,
-                  'think': item.type === 2,
-                  'music': item.type === 3
-                }"
+                :class="item.theme"
                 class="tag">
                 {{
-                  item.type === 1
-                    ? 'Code'
-                    : item.type === 2
-                      ? 'Think'
-                      : 'Music'
+                  item.theme | toUpper
                 }}
               </span>
 
@@ -90,7 +81,7 @@ export default {
 
   filters: {
     monthFilter (val) {
-      switch (val) {
+      switch (Number(val)) {
         case 1: return 'January'
         case 2: return 'February'
         case 3: return 'March'
@@ -104,6 +95,9 @@ export default {
         case 11: return 'November'
         case 12: return 'December'
       }
+    },
+    toUpper(val) {
+      return val.replace(/^\S/, s=>s.toUpperCase())
     }
   },
 
@@ -235,15 +229,15 @@ export default {
               cursor: pointer;
 
               &.code {
-                color: #457e86;
+                color: #16A085;
               }
 
               &.think {
-                color: #000000;
+                color: #e74c3c;
               }
 
-              &.music {
-                color: #c0c0c0;
+              &.note {
+                color: #2980B9;
               }
             }
           }
