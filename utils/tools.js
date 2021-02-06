@@ -16,7 +16,7 @@ function getActicleItem(item) {
   return {
     createAt: dayjs(item.time).format('MM.DD'),
     theme: item.theme,
-    url: item.url,
+    linkUrl: item.linkUrl,
     title: item.title
   }
 }

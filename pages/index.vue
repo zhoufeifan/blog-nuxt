@@ -29,7 +29,7 @@
               <span
                 v-if="!mobileLayout"
 
-                @click="goType(item)"
+                @click="goType(item.theme)"
                 :class="item.theme"
                 class="tag">
                 {{
@@ -37,7 +37,7 @@
                 }}
               </span>
 
-              <nuxt-link :to="`/article/${item._id}`">
+              <nuxt-link :to="`${item.linkUrl}`">
                 {{ item.title }}
               </nuxt-link>
 
@@ -102,10 +102,8 @@ export default {
   },
 
   methods: {
-    goType(item) {
-      let route = '/code';
-      if (item.type === 2) route = '/think';
-      if (item.type === 3) route = 'fuck';
+    goType(theme) {
+      let route = `/${theme}`;
       this.$router.push(route);
     }
   }

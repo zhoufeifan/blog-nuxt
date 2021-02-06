@@ -13,21 +13,8 @@
 export default {
   async asyncData({ $content, params }) {
     const article = await $content(params.slug).fetch();
-    // const tagsList = await $content('tags')
-    //   .only(['name', 'slug'])
-    //   .where({ name: { $containsAny: article.tags } })
-    //   .fetch()
-    // const tags = Object.assign({}, ...tagsList.map((s) => ({ [s.name]: s })))
-    // const [prev, next] = await $content('articles')
-    //   .only(['title', 'slug'])
-    //   .sortBy('createdAt', 'asc')
-    //   .surround(params.slug)
-    //   .fetch()
     return {
       article,
-      // tags,
-      // prev,
-      // next
     }
   },
 }
@@ -35,6 +22,7 @@ export default {
 
 <style lang="scss">
 .article-container {
+  padding-bottom: 100px;
   .article-header {
     margin-bottom: 30px;
   }
@@ -58,16 +46,18 @@ export default {
       width: 100%;
     }
     p {
-      margin-bottom: 20px;
+      line-height: 1.8rem;
+      margin: 1.5rem 0;
     }
     h2 {
       font-weight: bold;
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 24px;
+      margin: 1.5rem 0;
     }
     h3 {
       font-weight: bold;
-      font-size: 22px;
+      font-size: 20px;
+      margin: 1.2rem 0;
     }
   }
   .icon.icon-link {
