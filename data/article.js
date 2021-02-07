@@ -4,7 +4,6 @@ export default [
     theme: 'think',
     title: '为什么要坚持写博客',
     tag: '学习',
-    linkUrl: '/blogs/为什么要坚持写博客',
     desc: '从18年开始就有写博客的意识了，但是确很难坚持去写，自己总会拿种种原因逃避写博客，去年因为项目太忙就停止了，直到最近读了《软技能2》才意识到写博客的重要性。'
   },
   {
@@ -28,8 +27,8 @@ export default [
     theme: 'code',
     title: '微信小程序实践总结',
     tag: '小程序开发',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
+    desc: '一直想找机会想做微信小程序的项目，今年终于如愿以偿，耗时十个月，带领团队给volvo主机厂商做了个功能非常复杂的C端小程序，借这篇文章总结下开发小程序坑点以及对应的解决方案',
+    linkUrl: 'https://www.yuque.com/fecyrm/uyzotu/dwxdt8'
   },
   {
     time: '2020-08-31',
@@ -64,7 +63,7 @@ export default [
     linkUrl: '//www.baidu.com'
   },
   {
-    time: '2019-10-22',
+    time: '2019-09-22',
     theme: 'think',
     title: '下定决心，要做好理财',
     tag: '生活',
@@ -82,10 +81,10 @@ export default [
   {
     time: '2019-06-12',
     theme: 'code',
-    title: '移动端适配优雅方案',
+    title: '优雅地进行移动端适配',
     tag: '移动端',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
+    desc: '众所周知，进行移动端响应式开发，无非就是用 vw 和 rem 作为像素单位进行样式布局, 现在比较流行的是 vw 和 vh，自动根据浏览器的屏幕宽度和高度进行适配，不用像 rem 需要手动设置html的fontSize。请认真看下去，好戏再最后头😎',
+    linkUrl: 'https://www.yuque.com/fecyrm/uyzotu/xkqnsn'
   },
   {
     time: '2019-04-21',

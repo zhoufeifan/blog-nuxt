@@ -36,8 +36,8 @@
                   item.theme | toUpper
                 }}
               </span>
-
-              <nuxt-link :to="`${item.linkUrl}`">
+              <a v-if="item.linkUrl" target="_blank" :href="item.linkUrl">{{ item.title }}</a>
+              <nuxt-link v-else :to="`/blogs/${item.title}`">
                 {{ item.title }}
               </nuxt-link>
 
