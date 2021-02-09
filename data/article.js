@@ -19,8 +19,7 @@ export default [
     theme: 'think',
     title: '项目上线后的总结感悟',
     tag: '项目',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
+    desc: '给Volvo主机厂商做的项目终于上线了，长达十个月之久的攻坚战到此落下帷幕，从项目中总结出一些经验方便日后参考与回顾。',
   },
   {
     time: '2020-11-18',
