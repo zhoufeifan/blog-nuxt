@@ -32,51 +32,32 @@ export default [
   {
     time: '2020-08-31',
     theme: 'think',
-    title: '首次担任团队Leader的感受',
+    title: '首次担任TL的感受',
     tag: '前端',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
+    desc: '今年团队转型做交付型的项目，规模扩充了许多。我也被分配到某一项目线，担任前端团队的Leader。着算是我第一次带领团队做项目，可谓充满着压力与挑战。作为一个TL除了有较强的技术能力之外，还需要掌握其他重要的技能。',
   },
   {
-    time: '2020-03-21',
+    time: '2020-02-03',
     theme: 'think',
-    title: '首次接触交付型项目',
-    tag: '项目',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
-  },
-  {
-    time: '2020-01-28',
-    theme: 'think',
-    title: '沉迷于全面战争三国',
+    title: '沉迷于《全面战争·三国》',
     tag: '游戏',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
+    desc: '《全面战争·三国》是去年6月份刚刚出的一款大型策略类游戏，趁着疫情隔离在家体验了好好体验了一把，通关后有了一些感悟。',
   },
   {
     time: '2019-11-01',
     theme: 'note',
     title: '《穷爸爸，富爸爸》读后感',
     tag: '读书',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
+    desc: '树立起理财观念的一一本启蒙书，强烈推荐阅读',
   },
-  {
-    time: '2019-09-22',
-    theme: 'think',
-    title: '下定决心，要做好理财',
-    tag: '生活',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
-  },
-  {
-    time: '2019-06-22',
-    theme: 'think',
-    title: '入职大搜车一个月后的感受',
-    tag: '移动端',
-    desc: '哈哈哈哈哈哈哈',
-    linkUrl: '//www.baidu.com'
-  },
+  // {
+  //   time: '2019-09-22',
+  //   theme: 'think',
+  //   title: '下定决心，要做好理财',
+  //   tag: '生活',
+  //   desc: '哈哈哈哈哈哈哈',
+  //   linkUrl: '//www.baidu.com'
+  // },
   {
     time: '2019-06-12',
     theme: 'code',
@@ -95,43 +76,49 @@ export default [
   {
     time: '2019-02-12',
     theme: 'note',
-    title: '《睡眠革命》读后感',
+    title: '《睡眠革命》读书笔记',
     tag: '读书',
-    linkUrl: '//www.baidu.com'
   },
+  // {
+  //   time: '2019-01-23',
+  //   theme: 'think',
+  //   title: '切忌频繁换部门',
+  //   tag: '工作',
+  //   linkUrl: '//www.baidu.com'
+  // },
   {
-    time: '2019-01-23',
-    theme: 'think',
-    title: '切忌频繁换部门',
-    tag: '工作',
-    linkUrl: '//www.baidu.com'
-  },
-  {
-    time: '2018-08-23',
-    theme: 'think',
-    title: '学习钢琴半年后的感悟',
-    tag: '生活',
-    linkUrl: '//www.baidu.com'
-  },
-  {
-    time: '2018-06-12',
+    time: '2019-01-12',
     theme: 'code',
     title: '如何用node写一个自动化发布工具',
     tag: 'node',
-    linkUrl: '//www.baidu.com'
+    linkUrl: 'https://www.yuque.com/fecyrm/uyzotu/ulqs3c'
   },
-  {
-    time: '2018-04-16',
-    theme: 'think',
-    title: 'idea 远远大于能力',
-    tag: '生活',
-    linkUrl: '//www.baidu.com'
-  },
-  {
-    time: '2018-02-21',
-    theme: 'think',
-    title: '下定决心，要学习钢琴',
-    tag: '生活',
-    linkUrl: '//www.baidu.com'
-  }
+  // {
+  //   time: '2018-08-23',
+  //   theme: 'think',
+  //   title: '学习钢琴半年后的感悟',
+  //   tag: '生活',
+  //   linkUrl: '//www.baidu.com'
+  // },
+  // {
+  //   time: '2018-06-12',
+  //   theme: 'code',
+  //   title: '如何用node写一个自动化发布工具',
+  //   tag: 'node',
+  //   linkUrl: '//www.baidu.com'
+  // },
+  // {
+  //   time: '2018-04-16',
+  //   theme: 'think',
+  //   title: 'idea 远远大于能力',
+  //   tag: '生活',
+  //   linkUrl: '//www.baidu.com'
+  // },
+  // {
+  //   time: '2018-02-21',
+  //   theme: 'think',
+  //   title: '下定决心，要学习钢琴',
+  //   tag: '生活',
+  //   linkUrl: '//www.baidu.com'
+  // }
 ]

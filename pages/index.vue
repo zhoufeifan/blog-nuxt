@@ -58,7 +58,7 @@ export default {
   transition: 'fade',
 
   head: {
-    title: 'sitemap'
+    title: '周序猿 | sitemap'
   },
 
   fetch ({ store }) {

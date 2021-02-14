@@ -24,7 +24,9 @@ export const state = () => {
     userAgent: '',
 
     // 博主信息
-    adminInfo: {},
+    adminInfo: {
+      gravatar: '/images/me.jpg'
+    },
 
     // 网站信息
     option: {},
