@@ -2,7 +2,7 @@
   <div class="sitemap" :class="{'mobile': mobileLayout}">
     <ul class="tag clearfix">
       <li class="tag-item" v-for="item in tag" :key="item.name">
-        <nuxt-link :to="`/tag/${item._id}`">
+        <nuxt-link :to="`/tag/${item.name}`">
           {{ item.name }}
           <span>({{ item.count }})</span>
         </nuxt-link>
