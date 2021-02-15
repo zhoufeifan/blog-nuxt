@@ -20,5 +20,6 @@ $ yarn generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## TODO
-- 文章按年份分类
-- 按照标签显示文章列表页
+- 文章按年份分类 √
+- 按照标签显示文章列表页√
+- 适配移动端
