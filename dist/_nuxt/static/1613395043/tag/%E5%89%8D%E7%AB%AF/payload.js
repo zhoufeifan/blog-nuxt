@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tag/%E5%89%8D%E7%AB%AF", {data:[{}],fetch:[],mutations:[]});
