@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tag/AST", {data:[{}],fetch:[],mutations:[]});

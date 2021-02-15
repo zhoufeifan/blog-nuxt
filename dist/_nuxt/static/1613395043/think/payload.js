@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/think", {data:[{}],fetch:[],mutations:[]});
