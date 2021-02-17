@@ -76,7 +76,7 @@ export default [
   {
     time: '2019-04-21',
     theme: 'think',
-    title: '是什么让我下定决心想要离职',
+    title: '到底该不该换工作',
     tag: '工作',
   },
   {
