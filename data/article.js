@@ -78,12 +78,12 @@ export default [
     theme: 'think',
     title: '是什么让我下定决心想要离职',
     tag: '工作',
-    linkUrl: '//www.baidu.com'
   },
   {
     time: '2019-02-12',
     theme: 'note',
     title: '《睡眠革命》读书笔记',
+    desc: '一本讲关于如何养成高质量睡眠的书，记录了书中的一些要点',
     tag: '读书',
   },
   // {

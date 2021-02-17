@@ -9,7 +9,7 @@
           <p class="title">
             <!-- <nuxt-link :to="`/article/${item._id}`">{{ item.title }}</nuxt-link> -->
             <a v-if="item.linkUrl" target="_blank" :href="item.linkUrl">{{ item.title }}</a>
-            <nuxt-link v-else :to="`/blogs/${item.title}`">
+            <nuxt-link v-else :to="`/blogs/${item.title}/`">
               {{ item.title }}
             </nuxt-link>
           </p>
