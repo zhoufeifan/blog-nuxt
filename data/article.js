@@ -9,10 +9,9 @@ export default [
   {
     time: '2021-01-22',
     theme: 'code',
-    title: '初探AST，实现项目包优化',
+    title: '使用AST，实现项目包优化',
     tag: 'AST',
-    linkUrl: '//www.baidu.com',
-    desc: '哈哈哈哈哈哈哈'
+    desc: '写了一个babel插件，进行语法的转化，利用 webpack tree shaking 的特性实现包体积的优化'
   },
   {
     time: '2020-12-18',
