@@ -18,8 +18,11 @@ import articleView from '~/components/common/article'
 
 export default {
   name: 'code-component',
-
   scrollToTop: true,
+
+  head: {
+    title: 'note'
+  },
 
   // transition: 'fade',
 

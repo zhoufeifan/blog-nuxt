@@ -54,7 +54,7 @@ export function methodB (opts) {
 //... 省略很多method
 ```
 其好处就是：可以一键同步api，自动生成代码省去我们的编码工作，api声明和调用规范统一。
-但是它也带来了比较严重的弊端，即无论这个API方法是否被用到，它都会被打包到项目中，增大了项目的体积，影响应用的首屏启动速度。还有就是模块这种设计模式不支持代码分割，调用者必须如下使用API方法：
+但是它也带来了比较严重的弊端，即无论这个API方法是否被用到，它都会被打包到项目中，增大了项目的体积，影响应用的首屏启动速度。还有就是模块这种设计模式不支持代码分割，调用者必须如下的导入方式才能才能调用API：
 
 ```js
 // page.js
@@ -71,7 +71,7 @@ API.moduleA.methodC();
 主要目的就是将上述的 page.js 的中的代码改写成如下的形式:
 
 ``` js
-import { methodA, methodC} from '@/api/moduleA.js';
+import { methodA, methodC } from '@/api/moduleA.js';
 import { methodB } from '@/api/moduleB.js';
 methodA();
 methodB();

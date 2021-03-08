@@ -105,7 +105,7 @@ export default {
   transition: 'fade',
 
   head: {
-    title: 'About'
+    title: '关于我'
   },
 
   data () {

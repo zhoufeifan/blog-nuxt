@@ -20,7 +20,9 @@ export default {
   name: 'code-component',
 
   scrollToTop: true,
-
+  head: {
+    title: 'code'
+  },
   // transition: 'fade',
 
   // fetch ({ store, params }) {

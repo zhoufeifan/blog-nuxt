@@ -11,6 +11,9 @@
 
 <script>
 export default {
+  head: {
+    title: '文章'
+  },
   async asyncData({ $content, params }) {
     const article = await $content(params.slug).fetch();
     return {
