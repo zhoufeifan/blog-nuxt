@@ -1,5 +1,12 @@
 export default [
   {
+    time: '2021-03-03',
+    theme: 'code',
+    title: '使用TS泛型优雅地调用axios',
+    tag: 'TypeScript',
+    desc: '平时开发过程中会经常涉及到服务端API的调用，调用API的函数无法设置返回值的类型，因为是动态的依赖。所以给开发者带来了一定的困扰'
+  },
+  {
     time: '2021-02-01',
     theme: 'think',
     title: '为什么要坚持写博客',
