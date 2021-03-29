@@ -62,6 +62,9 @@ export default {
       font-size: 20px;
       margin: 1.2rem 0;
     }
+    a {
+      color: #07aab2;
+    }
   }
   .icon.icon-link {
     /* background-image: url('~assets/svg/icon-hashtag.svg'); */
