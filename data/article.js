@@ -1,5 +1,12 @@
 export default [
   {
+    time: '2021-08-22',
+    theme: 'code',
+    title: '基于AST在yapi平台下自动生成代码',
+    tag: 'AST',
+    desc: '本篇文章介绍的是如何在yapi平台上自动生成ts代码'
+  },
+  {
     time: '2021-03-27',
     theme: 'think',
     title: '为什么我会感到焦虑',
