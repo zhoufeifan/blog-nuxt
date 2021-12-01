@@ -120,7 +120,8 @@ export function testAPI(params: TestReq) {
 }
 ```
 - 5、最后利用 html 原生的 navigator.clipboard.writeText(code) 方法就可以把代码复制到粘贴板上
-
+看源代码可以访问该地址: [https://github.com/zhoufeifan/yapi-airship](https://github.com/zhoufeifan/yapi-airship)
+### babel-type 的使用
 ## babel-type 的使用
 生成代码就需要借助 babel-type 工具了，[点击查看详细文档](https://www.babeljs.cn/docs/babel-types)。可以看到babel-type的api文档内容非常复杂且庞大，
 所以通过阅读熟记文档来学习是不可取的。所以建议是有目的性的去使用它，先把想要生成的代码转化为对应的AST。在分析对应的AST结构，需要构造哪些节点以及相应的节点属性，再有目的性地查阅对应的api方法构建相应的AST，
@@ -160,12 +161,11 @@ export function testAPI(params: TestReq) {
   }
 ]
 ```
-需要构造这段代码，就得先创建 一个 ExpressionStatement, 查阅 api 其调用方式如下：
+从语法树上可以看到需要构造这段代码，就得先创建 一个 ExpressionStatement, 查阅 api 其调用方式如下：
 ``` js
 const expressionStatement =  t.expressionStatement(expression); 
 ```
 expressionStatement 方法依赖一个 expression 类型的参数，从AST里看到 它需要一个 CallExpression，因此需要创建 CallExpression 作为参数传给它,代码如下：
-
 ``` js
 const expression = t.callExpression(callee, args);
 const expressionStatement =  t.expressionStatement(expression); 
@@ -181,6 +181,14 @@ const args = [t.stringLiteral('aa')];
 const expression = t.callExpression(callee, args);
 const expressionStatement =  t.expressionStatement(expression); 
 ```
+### 工具演示
+需先安装好chrome插件
+
+![image](/blogs/yapi/step-1.jpg)
+
+![image](/blogs/yapi/step-2.png)
+
+![image](/blogs/yapi/step-3.png)
 
 
 ## 遇到的坑点
